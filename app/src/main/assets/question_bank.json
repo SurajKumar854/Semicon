@@ -1,0 +1,679 @@
+{ "status": true,
+  "quizBankData": [
+    {
+      "question_group_id": 1,
+      "questions_list": [
+        {
+          "question_id": 1,
+          "question": "When was the India Semiconductor Mission established ?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "2018"
+            },
+            {
+              "option_id": 2,
+              "option_value": "2019"
+            },
+            {
+              "option_id": 3,
+              "option_value": "2020"
+            },
+            {
+              "option_id": 4,
+              "option_value": "2021"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "2021"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "What is the correct sequence of the transistor technology evolution- i. FinFET, ii. Planar MOSFET, iii. Gate-all-around (GAA) Transistors",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "i-ii-iii"
+            },
+            {
+              "option_id": 2,
+              "option_value": "ii-i-iii"
+            },
+            {
+              "option_id": 3,
+              "option_value": "i-iii-ii"
+            },
+            {
+              "option_id": 4,
+              "option_value": "iii-ii-i"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "ii-i-iii"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "What is the budget outlay allocated by the Government of India for the Semicon India Programme under ISM for boosting semiconductor manufacturing in India ? ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "INR 56,000 crore"
+            },
+            {
+              "option_id": 2,
+              "option_value": "INR 66,000 crore"
+            },
+            {
+              "option_id": 3,
+              "option_value": "INR 76,000 crore"
+            },
+            {
+              "option_id": 4,
+              "option_value": "INR 86,000 crore"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "INR 76,000 crore"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "Which country is the leader in Extreme Ultraviolet (EUV) lithography equipment used in Semiconductor manufacturing? ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Japan"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Netherland"
+            },
+            {
+              "option_id": 3,
+              "option_value": "South Korea"
+            },
+            {
+              "option_id": 4,
+              "option_value": "United States of America"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Netherland"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "What is the projected size of the Global Semiconductor market by 2030? ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": " ~$1600 Bn"
+            },
+            {
+              "option_id": 2,
+              "option_value": " ~$1300 Bn"
+            },
+            {
+              "option_id": 3,
+              "option_value": "~$1000 Bn"
+            },
+            {
+              "option_id": 4,
+              "option_value": "~$800 Bn"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "~$1000 Bn"
+          }
+        }
+      ]
+    },
+    {
+      "question_group_id": 2,
+      "questions_list": [
+        {
+          "question_id": 1,
+          "question": "Which company has the largest market share in semiconductor foundry business?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "GlobalFoundries"
+            },
+            {
+              "option_id": 2,
+              "option_value": "TSMC"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Samsung Foundry"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Intel Foundry"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "TSMC"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "Which region has the majority of advanced sub-10nm chip manufacturing facilities?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Japan"
+            },
+            {
+              "option_id": 2,
+              "option_value": "South Korea"
+            },
+            {
+              "option_id": 3,
+              "option_value": "United States of America"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Taiwan"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "Taiwan"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "In which year the point-contact transistor demonstrated  by William Shockley, Bardeen and Brattain at the Bell Labs?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "1947"
+            },
+            {
+              "option_id": 2,
+              "option_value": "1978"
+            },
+            {
+              "option_id": 3,
+              "option_value": "1985"
+            },
+            {
+              "option_id": 4,
+              "option_value": "1996"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "1947"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "What is the projected size of the Indian semiconductor market by 2030?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "~$25 Bn"
+            },
+            {
+              "option_id": 2,
+              "option_value": "~$60 Bn"
+            },
+            {
+              "option_id": 3,
+              "option_value": "~$80 Bn"
+            },
+            {
+              "option_id": 4,
+              "option_value": "~$110 Bn"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "~$110 Bn"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "How much fiscal support is being provided by ISM for establishing display and semiconductor fabs under Programme for Development of Semiconductors and Display Ecosystem in India?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "10% of eligible project cost"
+            },
+            {
+              "option_id": 2,
+              "option_value": "25% of eligible project cost"
+            },
+            {
+              "option_id": 3,
+              "option_value": "30% of eligible project cost"
+            },
+            {
+              "option_id": 4,
+              "option_value": "50% of eligible project cost"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "50% of eligible project cost"
+          }
+        }
+      ]
+    },
+    {
+      "question_group_id": 3,
+      "questions_list": [
+        {
+          "question_id": 1,
+          "question": "India Semiconductor Mission (ISM) has signed MoU/ MoC on semiconductors with which regions/ countries?  ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "US"
+            },
+            {
+              "option_id": 2,
+              "option_value": "EU"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Japan"
+            },
+            {
+              "option_id": 4,
+              "option_value": "All of the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "All of the above"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "How many projects have been approved under Programme for Semiconductors and Display Ecosystem in India as of March 2024? ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "One"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Two"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Three"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Four"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "Three"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "Which among the following is an IDM?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Intel "
+            },
+            {
+              "option_id": 2,
+              "option_value": "Samsung"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Micron"
+            },
+            {
+              "option_id": 4,
+              "option_value": "All of the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "All of the above"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "What are the majority charge carriers in an N-type semiconductor?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Holes "
+            },
+            {
+              "option_id": 2,
+              "option_value": "Electrons"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Protons"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Neutrons"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Electrons"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "The energy difference between the valence band and the conduction band in a semiconductor is termed as?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Voltage Differential "
+            },
+            {
+              "option_id": 2,
+              "option_value": "Energy Band Gap"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Thermal Barrier"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Fermi Energy"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Energy Band Gap"
+          }
+        }
+      ]
+    },
+    {
+      "question_group_id": 4,
+      "questions_list": [
+        {
+          "question_id": 1,
+          "question": "A Semiconductor company that focuses on design and innovation but outsources manufacturing is commonly referred to as:  ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Fabless company"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Foundry company"
+            },
+            {
+              "option_id": 3,
+              "option_value": "OSAT"
+            },
+            {
+              "option_id": 4,
+              "option_value": "IDM"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "Fabless company"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "The resultant semiconductor type, after adding pentavalent impurity in group-IV semiconductor will be? ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Z-Type"
+            },
+            {
+              "option_id": 2,
+              "option_value": "P-Type"
+            },
+            {
+              "option_id": 3,
+              "option_value": "N-Type"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Intrinsic"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "N-Type"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "Which region currently holds the most of the global semiconductor manufacturing capacity?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "North America"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Europe"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Asia"
+            },
+            {
+              "option_id": 4,
+              "option_value": "South America"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "Asia"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "The classic Moore's Law states that the number of components on a single IC doubles roughly every______.",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Eight Years"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Sixteen Years"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Two Years"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Four Years"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "Two Years"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "Semiconductor Chips are used in which of the following?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Smart Watch"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Automobile industry"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Smartphones"
+            },
+            {
+              "option_id": 4,
+              "option_value": "All of the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "All of the above"
+          }
+        }
+      ]
+    },
+    {
+      "question_group_id": 5,
+      "questions_list": [
+        {
+          "question_id": 1,
+          "question": "Which of the following diode is primarily used for voltage regulation in electronic devices?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Light-emitting diodes"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Photo diode"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Zener diode"
+            },
+            {
+              "option_id": 4,
+              "option_value": "all of the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "Zener diode"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "Which CMOS based technologies are intended to be supported for fiscal support by ISM under Semicon India Programme ?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Logic "
+            },
+            {
+              "option_id": 2,
+              "option_value": "Memory"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Mixed Signal ICs"
+            },
+            {
+              "option_id": 4,
+              "option_value": "All of the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "All of the above"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "Which of the following affects the size of the energy bandgap in semiconductor materials?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Temperature"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Doping"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Impurity concentration"
+            },
+            {
+              "option_id": 4,
+              "option_value": "All of the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "All of the above"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "What is the marked region 'x' between source and drain in the above illustration of n-type MOSFET?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Gate"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Channel"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Well"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Tube"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Channel"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "An example of pentavalent impurity in semiconductor doping: ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Boron"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Phosphorus"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Aluminium"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Gallium"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Phosphorus"
+          }
+        }
+      ]
+    }
+  ]
+}
