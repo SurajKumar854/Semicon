@@ -1,15 +1,15 @@
 {
   "project_info": {
-    "project_number": "755621626936",
-    "project_id": "semi-con-3e194",
-    "storage_bucket": "semi-con-3e194.appspot.com"
+    "project_number": "93907868392",
+    "project_id": "placedemo-360609",
+    "storage_bucket": "placedemo-360609.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:755621626936:android:540c9704d429ec131952cd",
+        "mobilesdk_app_id": "1:93907868392:android:6673a12acf9f5fa1a2475d",
         "android_client_info": {
-          "package_name": "com.suraj854.myapplication"
+          "package_name": "com.suraj854.healthquiz"
         }
       },
       "oauth_client": [],

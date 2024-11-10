@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.suraj854.myapplication"
+    namespace = "com.suraj854.healthquiz"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.suraj854.myapplication"
+        applicationId = "com.suraj854.healthquiz"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
