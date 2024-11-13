@@ -15,10 +15,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.BasicTextField
-import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -27,6 +29,7 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
@@ -48,6 +51,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -61,10 +65,15 @@ import com.suraj854.healthquiz.data.common.Utils
 import com.suraj854.healthquiz.data.signup.enum.AuthErrorType
 import com.suraj854.healthquiz.domain.signup.entities.User
 import com.suraj854.healthquiz.navigation.Screen
-import com.suraj854.healthquiz.presentation.common.BrandHeader
 import com.suraj854.healthquiz.presentation.signup.screen.viewmodel.SignUpViewModel
 import com.suraj854.healthquiz.presentation.theme.BGColor
+import com.suraj854.healthquiz.presentation.theme.Blue
+import com.suraj854.healthquiz.presentation.theme.DarkGray
+import com.suraj854.healthquiz.presentation.theme.Green
+import com.suraj854.healthquiz.presentation.theme.Green100
+import com.suraj854.healthquiz.presentation.theme.Orange
 import com.suraj854.healthquiz.presentation.theme.PrimaryColor
+import ir.kaaveh.sdpcompose.sdp
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnrememberedMutableState")
@@ -134,7 +143,7 @@ fun SignUpScreen(
                     formLoading.value = false
                     apiErrorMsg.value = response.msg
                     isApiResponseSuccess.value = true
-                    Log.e("Tag","Unknown Error Occurred-NetworkError ${response}")
+                    Log.e("Tag", "Unknown Error Occurred-NetworkError ${response}")
                 }
 
                 is MissionSemiConductorApiState.Loading -> {
@@ -146,7 +155,7 @@ fun SignUpScreen(
 
                 is MissionSemiConductorApiState.Failure -> {
                     formLoading.value = false
-                    Log.e("Tag","Unknown Error Occurred")
+                    Log.e("Tag", "Unknown Error Occurred")
 
 
                 }
@@ -162,7 +171,7 @@ fun SignUpScreen(
                                 formLoading.value = false
                                 apiErrorMsg.value = "Email already registered"
                                 isApiResponseSuccess.value = false
-                                Log.e("Tag","Unknown Error Occurred-Email ${response}")
+                                Log.e("Tag", "Unknown Error Occurred-Email ${response}")
 
                             }
 
@@ -170,7 +179,7 @@ fun SignUpScreen(
                                 formLoading.value = false
                                 apiErrorMsg.value = "Phone number already registered"
                                 isApiResponseSuccess.value = false
-                                Log.e("Tag","Unknown Error Occurred-MobileNumber ${response}")
+                                Log.e("Tag", "Unknown Error Occurred-MobileNumber ${response}")
                             }
 
                             AuthErrorType.NoError -> {
@@ -197,7 +206,7 @@ fun SignUpScreen(
                 else -> {
                     formLoading.value = false
                     isApiResponseSuccess.value = true
-                    Log.e("Tag","Unknown Error Occurred-else ${response}")
+                    Log.e("Tag", "Unknown Error Occurred-else ${response}")
                 }
             }
         }
@@ -207,10 +216,14 @@ fun SignUpScreen(
     Scaffold(
         containerColor = BGColor,
     ) { innerPadding ->
-        Box(modifier = Modifier.fillMaxSize()) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(innerPadding)
+        ) {
             Image(
-                painter = painterResource(id = R.drawable.splash_bg),
-                contentScale = ContentScale.FillBounds,
+                painter = painterResource(id = R.drawable.app_background),
+                contentScale = ContentScale.Crop,
                 contentDescription = "splash_bg",
                 modifier = Modifier.fillMaxSize()
             )
@@ -220,14 +233,14 @@ fun SignUpScreen(
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    CircularProgressIndicator(modifier = Modifier.height(52.dp))
+                    CircularProgressIndicator(modifier = Modifier.height(52.dp), color = Green100)
                     Spacer(modifier = Modifier.height(10.dp))
                     Text(
                         text = "Please wait",
                         textAlign = TextAlign.Center,
                         fontSize = 21.sp,
                         fontWeight = FontWeight.Bold,
-                        color = PrimaryColor,
+                        color = DarkGray,
 
                         )
 
@@ -235,19 +248,72 @@ fun SignUpScreen(
             } else {
 
 
-
                 Column(
                     modifier = Modifier
                         .padding(16.dp)
-                        .padding(top = 24.dp)
+                        .verticalScroll(rememberScrollState())
                 ) {
-                    Row(modifier = Modifier.padding(16.dp)) {
-                        BrandHeader()
+
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(72.sdp)
+
+                    ) {
+
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(72.sdp), horizontalArrangement = Arrangement.Center
+                        ) {
+                            Row(
+                                modifier = Modifier.padding(horizontal = 16.dp),
+                                horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Image(
+                                    painter = painterResource(id = R.drawable.ministry_01),
+                                    contentScale = ContentScale.FillBounds,
+                                    modifier = Modifier
+                                        .height(72.sdp)
+                                        .width(120.dp).scale(1.1f),
+
+                                    contentDescription = "Logo"
+                                )
+                                Spacer(modifier = Modifier.width(8.sdp))
+                                VerticalDivider(color = Color.Gray,modifier = Modifier.padding(vertical = 8.sdp))
+                                Spacer(modifier = Modifier.width(8.sdp))
+                                Image(
+                                    painter = painterResource(id = R.drawable.ic_logo),
+                                    contentScale = ContentScale.Fit,
+                                    modifier = Modifier
+                                        .height(52.sdp),
+
+                                    contentDescription = "Logo"
+                                )
+                            }
+                            /*
+                                                        Row(
+                                                            modifier = Modifier
+                                                                .fillMaxWidth()
+                                                                .weight(0.5f).padding(horizontal = 16.dp), horizontalArrangement = Arrangement.Center
+                                                        ) {
+                                                            Image(
+                                                                painter = painterResource(id = R.drawable.ministry_2),
+                                                                contentScale = ContentScale.FillBounds,
+                                                                modifier = Modifier
+                                                                    .height(72.sdp).width(130.dp).scale(1.2f),
+
+                                                                contentDescription = "Logo"
+                                                            )
+                                                        }*/
+                        }
+
+
                     }
                     Spacer(modifier = Modifier.height(8.dp))
                     Card(
                         modifier = Modifier
-                            .padding(16.dp)
+                            .padding(horizontal = 16.dp)
                             .fillMaxWidth(),
                         elevation = CardDefaults.cardElevation(
                             defaultElevation = 1.dp
@@ -265,214 +331,237 @@ fun SignUpScreen(
                                     textAlign = TextAlign.Center,
                                     fontSize = 28.sp,
                                     fontWeight = FontWeight.Bold,
-                                    color = Color(0xff758FF5),
-
-                                    )
-                            }
-                            Text(
-                                text = "First Name",
-                                textAlign = TextAlign.Center,
-                                fontSize = 15.sp,
-                                color = Color(0xff6C7278),
-
-                                )
-
-                            Spacer(modifier = Modifier.height(2.dp))
-                            BasicTextField(
-                                value = firstName.value,
-                                onValueChange = { firstName.value = it },
-                                decorationBox = { innerTextField ->
-                                    // Place the innerTextField inside the box for proper alignment
-                                    if (firstName.value.isBlank()) {
-                                        Text(
-                                            text = "Enter your first name",
-                                            modifier = Modifier.fillMaxWidth(),
-                                            style = TextStyle(
-                                                color = Color.Gray.copy(alpha = 0.5f),
-                                                fontSize = 18.sp
-                                            )
-                                        )
-                                    }
-                                    innerTextField()
-                                },
-                                keyboardOptions = KeyboardOptions.Default.copy(
-                                    autoCorrect = true,
-                                    imeAction = ImeAction.Done // Sets the action button to "Done"
-                                ),
-                                keyboardActions = KeyboardActions(onDone = {
-                                    focusRequester.requestFocus()
-                                    keyboardController?.hide()
-                                }),
-                                textStyle = TextStyle(fontSize = 18.sp),
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .focusRequester(focusRequester)
-                                    .border(
-                                        width = 1.dp,
-                                        color = Color.Gray,
-                                        shape = RoundedCornerShape(10.dp)
-                                    )
-                                    .padding(16.dp) // Padding around text inside the field
-
-                            )
-                            if (isFirstNameValid.value) {
-                                Text(
-                                    text = firstNameError.value,
-                                    textAlign = TextAlign.Center,
-                                    fontSize = 12.sp,
-                                    color = Color.Red,
+                                    color = Blue,
 
                                     )
                             }
                             Spacer(modifier = Modifier.height(8.dp))
-                            Text(
-                                text = "Last Name",
-                                textAlign = TextAlign.Center,
-                                fontSize = 15.sp,
-                                color = Color(0xff6C7278),
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Column(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .weight(0.5f)
+                                ) {
+                                    Text(
+                                        text = "First Name",
+                                        textAlign = TextAlign.Center,
+                                        fontSize = 15.sp,
+                                        color = Color(0xff6C7278),
 
-                                )
-
-                            Spacer(modifier = Modifier.height(2.dp))
-                            BasicTextField(
-                                value = lastName.value,
-                                onValueChange = { lastName.value = it },
-                                decorationBox = { innerTextField ->
-                                    // Place the innerTextField inside the box for proper alignment
-                                    if (lastName.value.isBlank()) {
-                                        Text(
-                                            text = "Enter your last name",
-                                            modifier = Modifier.fillMaxWidth(),
-                                            style = TextStyle(
-                                                color = Color.Gray.copy(alpha = 0.5f),
-                                                fontSize = 18.sp
-                                            )
                                         )
-                                    }
-                                    innerTextField()
-                                },
-                                textStyle = TextStyle(fontSize = 18.sp),
-                                keyboardOptions = KeyboardOptions.Default.copy(
-                                    autoCorrect = true,
-                                    imeAction = ImeAction.Done // Sets the action button to "Done"
-                                ),
-                                keyboardActions = KeyboardActions(onDone = {
-                                    focusRequester.requestFocus()
-                                    keyboardController?.hide()
-                                }),
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .focusRequester(focusRequester)
-                                    .border(
-                                        width = 1.dp,
-                                        color = Color.Gray,
-                                        shape = RoundedCornerShape(10.dp)
-                                    )
-                                    .padding(16.dp) // Padding around text inside the field
 
-                            )
-                            if (isLastNameValid.value) {
-                                Text(
-                                    text = lastNameError.value,
-                                    textAlign = TextAlign.Center,
-                                    fontSize = 12.sp,
-                                    color = Color.Red,
-
-                                    )
-                            }
-                            Spacer(modifier = Modifier.height(8.dp))
-                            Text(
-                                text = "Email",
-                                textAlign = TextAlign.Center,
-                                fontSize = 15.sp,
-                                color = Color(0xff6C7278),
-
-                                )
-
-                            Spacer(modifier = Modifier.height(2.dp))
-
-                            BasicTextField(
-                                value = email.value,
-                                onValueChange = {
-                                    email.value = it
-                                    if (Utils.isValidEmail(it)) {
-                                        isEmailValueValid.value = false
-                                    } else {
-                                        isEmailValueValid.value = true
-                                    }
-                                },
-                                decorationBox = { innerTextField ->
-                                    // Place the innerTextField inside the box for proper alignment
-                                    if (email.value.isBlank()) {
-                                        Text(
-                                            text = "Enter your email address",
-                                            modifier = Modifier.fillMaxWidth(),
-                                            style = TextStyle(
-                                                color = Color.Gray.copy(alpha = 0.5f),
-                                                fontSize = 18.sp
+                                    Spacer(modifier = Modifier.height(2.dp))
+                                    BasicTextField(
+                                        value = firstName.value,
+                                        onValueChange = { firstName.value = it },
+                                        decorationBox = { innerTextField ->
+                                            // Place the innerTextField inside the box for proper alignment
+                                            if (firstName.value.isBlank()) {
+                                                Text(
+                                                    text = "Enter your first name",
+                                                    modifier = Modifier.fillMaxWidth(),
+                                                    style = TextStyle(
+                                                        color = Color.Gray.copy(alpha = 0.5f),
+                                                        fontSize = 18.sp
+                                                    )
+                                                )
+                                            }
+                                            innerTextField()
+                                        },
+                                        keyboardOptions = KeyboardOptions(
+                                            autoCorrect = true,
+                                            imeAction = ImeAction.Done // Sets the action button to "Done"
+                                        ),
+                                        textStyle = TextStyle(fontSize = 18.sp),
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .focusRequester(focusRequester)
+                                            .border(
+                                                width = 1.dp,
+                                                color = Color.Gray,
+                                                shape = RoundedCornerShape(10.dp)
                                             )
-                                        )
+                                            .padding(16.dp) // Padding around text inside the field
+
+                                    )
+                                    if (isFirstNameValid.value) {
+                                        Text(
+                                            text = firstNameError.value,
+                                            textAlign = TextAlign.Center,
+                                            fontSize = 12.sp,
+                                            color = Color.Red,
+
+                                            )
                                     }
-                                    innerTextField()
-                                },
-                                textStyle = TextStyle(fontSize = 18.sp),
-                                keyboardOptions = KeyboardOptions.Default.copy(
-                                    autoCorrect = true,
-                                    imeAction = ImeAction.Done // Sets the action button to "Done"
-                                ),
-                                keyboardActions = KeyboardActions(onDone = {
-                                    focusRequester.requestFocus()
-                                    keyboardController?.hide()
-                                }),
+                                }
 
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .focusRequester(focusRequester)
-                                    .border(
-                                        width = 1.dp,
-                                        color = Color.Gray,
-                                        shape = RoundedCornerShape(10.dp)
+                                Spacer(modifier = Modifier.width(24.sdp))
+                                Column(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .weight(0.5f)
+                                ) {
+                                    Text(
+                                        text = "Last Name",
+                                        textAlign = TextAlign.Center,
+                                        fontSize = 15.sp,
+                                        color = Color(0xff6C7278),
+
+                                        )
+
+                                    Spacer(modifier = Modifier.height(2.dp))
+                                    BasicTextField(
+                                        value = lastName.value,
+                                        onValueChange = { lastName.value = it },
+                                        decorationBox = { innerTextField ->
+                                            // Place the innerTextField inside the box for proper alignment
+                                            if (lastName.value.isBlank()) {
+                                                Text(
+                                                    text = "Enter your last name",
+                                                    modifier = Modifier.fillMaxWidth(),
+                                                    style = TextStyle(
+                                                        color = Color.Gray.copy(alpha = 0.5f),
+                                                        fontSize = 18.sp
+                                                    )
+                                                )
+                                            }
+                                            innerTextField()
+                                        },
+                                        textStyle = TextStyle(fontSize = 18.sp),
+                                        keyboardOptions = KeyboardOptions(
+                                            autoCorrect = true,
+                                            imeAction = ImeAction.Done // Sets the action button to "Done"
+                                        ),
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .focusRequester(focusRequester)
+                                            .border(
+                                                width = 1.dp,
+                                                color = Color.Gray,
+                                                shape = RoundedCornerShape(10.dp)
+                                            )
+                                            .padding(16.dp) // Padding around text inside the field
+
                                     )
-                                    .padding(16.dp) // Padding around text inside the field
+                                    if (isLastNameValid.value) {
+                                        Text(
+                                            text = lastNameError.value,
+                                            textAlign = TextAlign.Center,
+                                            fontSize = 12.sp,
+                                            color = Color.Red,
 
-                            )
-                            if (isEmailValueValid.value) {
-                                Text(
-                                    text = emailError.value,
-                                    textAlign = TextAlign.Center,
-                                    fontSize = 12.sp,
-                                    color = Color.Red,
+                                            )
+                                    }
+                                }
+                            }
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween
+                            ) {
+                                Column(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .weight(0.5f)
+                                ) {
+                                    Text(
+                                        text = "Email",
+                                        textAlign = TextAlign.Center,
+                                        fontSize = 15.sp,
+                                        color = Color(0xff6C7278),
+
+                                        )
+
+                                    Spacer(modifier = Modifier.height(2.dp))
+
+                                    BasicTextField(
+                                        value = email.value,
+                                        onValueChange = {
+                                            email.value = it
+                                            if (Utils.isValidEmail(it)) {
+                                                isEmailValueValid.value = false
+                                            } else {
+                                                isEmailValueValid.value = true
+                                            }
+                                        },
+                                        decorationBox = { innerTextField ->
+                                            // Place the innerTextField inside the box for proper alignment
+                                            if (email.value.isBlank()) {
+                                                Text(
+                                                    text = "Enter your email address",
+                                                    modifier = Modifier.fillMaxWidth(),
+                                                    style = TextStyle(
+                                                        color = Color.Gray.copy(alpha = 0.5f),
+                                                        fontSize = 18.sp
+                                                    )
+                                                )
+                                            }
+                                            innerTextField()
+                                        },
+                                        textStyle = TextStyle(fontSize = 18.sp),
+                                        keyboardOptions = KeyboardOptions(
+                                            autoCorrect = true,
+                                            keyboardType = KeyboardType.Email,
+                                            imeAction = ImeAction.Done // Sets the action button to "Done"
+                                        ),
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .focusRequester(focusRequester)
+                                            .border(
+                                                width = 1.dp,
+                                                color = Color.Gray,
+                                                shape = RoundedCornerShape(10.dp)
+                                            )
+                                            .padding(16.dp) // Padding around text inside the field
 
                                     )
+                                    if (isEmailValueValid.value) {
+                                        Text(
+                                            text = emailError.value,
+                                            textAlign = TextAlign.Center,
+                                            fontSize = 12.sp,
+                                            color = Color.Red,
+
+                                            )
+                                    }
+                                }
+
+                                Spacer(modifier = Modifier.width(24.sdp))
+                                Column(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .weight(0.5f)
+                                ) {
+                                    Text(
+                                        text = "Phone number",
+                                        textAlign = TextAlign.Center,
+                                        fontSize = 15.sp,
+                                        color = Color(0xff6C7278),
+
+                                        )
+
+                                    Spacer(modifier = Modifier.height(2.dp))
+                                    ZvoidCountryCodePicker(
+                                        text = phoneNumber.value,
+                                        onValueChange = {
+                                            phoneNumber.value = it
+                                        },
+                                        onPhoneCodeChange = {
+                                            countryCode.value = it
+                                        },
+                                        unfocusedBorderColor = Color.Gray,
+                                        bottomStyle = false, //  if true the text-field is below the country code selector at the top.
+                                        shape = RoundedCornerShape(0.dp),
+                                        showCountryCode = true,
+                                        color = Color.Transparent,
+                                        modifier = Modifier.fillMaxWidth()
+                                    )
+                                }
                             }
 
-                            Spacer(modifier = Modifier.height(8.dp))
-                            Text(
-                                text = "Phone number",
-                                textAlign = TextAlign.Center,
-                                fontSize = 15.sp,
-                                color = Color(0xff6C7278),
-
-                                )
-
-                            Spacer(modifier = Modifier.height(2.dp))
-                            ZvoidCountryCodePicker(
-                                text = phoneNumber.value,
-                                onValueChange = {
-                                    phoneNumber.value = it
-                                },
-                                onPhoneCodeChange = {
-                                    countryCode.value = it
-                                },
-                                unfocusedBorderColor = Color.Gray,
-                                bottomStyle = false, //  if true the text-field is below the country code selector at the top.
-                                shape = RoundedCornerShape(0.dp),
-                                showCountryCode = true,
-                                color = Color.Transparent,
-                                modifier = Modifier.fillMaxWidth()
-                            )
-
-                            Spacer(modifier = Modifier.height(20.dp))
+                            Spacer(modifier = Modifier.height(8.sdp))
 
                             Button(
                                 onClick = {
@@ -508,10 +597,10 @@ fun SignUpScreen(
 
 
                                 },
-                                colors = ButtonDefaults.buttonColors(Color(0xff1D61E7)),
+                                colors = ButtonDefaults.buttonColors(Orange, disabledContainerColor = Color.LightGray),
                                 modifier = Modifier
                                     .align(Alignment.CenterHorizontally)
-                                    .padding(start = 10.dp, bottom = 24.dp, end = 10.dp)
+                                    .padding(bottom = 24.dp)
                                     .fillMaxWidth(),
                                 shape = RoundedCornerShape(12.dp),
                                 enabled = isFormValid
@@ -523,401 +612,6 @@ fun SignUpScreen(
                                     color = Color.White,
                                 )
                             }
-
-                            /*   TextField(modifier = Modifier
-                                   .fillMaxWidth()
-                                   .bringIntoViewRequester(bringIntoViewRequester)
-                                   .onFocusEvent {
-                                       if (it.isFocused) {
-                                           coroutineScope.launch {
-                                               bringIntoViewRequester.bringIntoView()
-                                           }
-                                       }
-                                   }, value = firstName.value, onValueChange = {
-                                   firstName.value = it
-                               }, textStyle = TextStyle(
-                                   color = PrimaryColor,
-                                   fontSize = 18.sp,
-                                   fontWeight = FontWeight.W600,
-                                   textAlign = TextAlign.Left
-                               ), colors = TextFieldDefaults.  .colors(
-
-                                   focusedContainerColor = Color(0xffEDF1F3),
-                                   unfocusedContainerColor = Color(0xffEDF1F3),
-                                   disabledContainerColor = Color.Transparent,
-                                   errorContainerColor = Color.Transparent,
-
-                                   ), singleLine = true, placeholder = {
-                                   if (firstName.value.isBlank()) {
-                                       Text(
-                                           modifier = Modifier.fillMaxWidth(),
-                                           text = "Enter first name",
-                                           color = Color.DarkGray,
-                                           fontSize = 18.sp,
-                                           textAlign = TextAlign.Left
-                                       )
-                                   }
-                               })*/
-                            /*    if (isFirstNameValid.value) {
-                                    Text(
-                                        text = firstNameError.value,
-                                        textAlign = TextAlign.Center,
-                                        fontSize = 12.sp,
-                                        fontWeight = FontWeight.Bold,
-                                        color = Color.Red,
-
-                                        )
-                                }
-
-
-                                Text(
-                                    text = "Last Name",
-                                    textAlign = TextAlign.Center,
-                                    fontSize = 21.sp,
-                                    fontWeight = FontWeight.Bold,
-                                    color = PrimaryColor,
-                                    modifier = Modifier.padding(top = 16.dp)
-                                )
-
-                                TextField(modifier = Modifier
-                                    .fillMaxWidth()
-                                    .bringIntoViewRequester(bringIntoViewRequester)
-                                    .onFocusEvent {
-                                        if (it.isFocused) {
-                                            coroutineScope.launch {
-                                                bringIntoViewRequester.bringIntoView()
-                                            }
-                                        }
-                                    }, value = lastName.value, onValueChange = {
-                                    lastName.value = it
-                                }, textStyle = TextStyle(
-                                    color = PrimaryColor,
-                                    fontSize = 18.sp,
-                                    fontWeight = FontWeight.W600,
-                                    textAlign = TextAlign.Left
-                                ), colors = TextFieldDefaults.outlinedTextFieldColors(
-                                    focusedBorderColor = PrimaryColor,
-                                    unfocusedBorderColor = PrimaryColor,
-                                    cursorColor = PrimaryColor
-                                ), singleLine = true, placeholder = {
-                                    if (lastName.value.isBlank()) {
-                                        Text(
-                                            modifier = Modifier.fillMaxWidth(),
-                                            text = "Enter last name",
-                                            color = Color.DarkGray,
-                                            fontSize = 18.sp,
-                                            textAlign = TextAlign.Left
-                                        )
-                                    }
-                                })
-                                if (isLastNameValid.value) {
-                                    Text(
-                                        text = lastNameError.value,
-                                        textAlign = TextAlign.Center,
-                                        fontSize = 12.sp,
-                                        fontWeight = FontWeight.Bold,
-                                        color = Color.Red,
-
-                                        )
-                                }
-
-                                Text(
-                                    text = "Email",
-                                    textAlign = TextAlign.Center,
-                                    fontSize = 21.sp,
-                                    fontWeight = FontWeight.Bold,
-                                    color = PrimaryColor,
-                                    modifier = Modifier.padding(top = 16.dp)
-                                )
-
-                                TextField(modifier = Modifier
-                                    .fillMaxWidth()
-                                    .bringIntoViewRequester(bringIntoViewRequester)
-                                    .onFocusEvent {
-                                        if (it.isFocused) {
-                                            coroutineScope.launch {
-                                                bringIntoViewRequester.bringIntoView()
-                                            }
-                                        }
-                                    }, value = email.value, onValueChange = {
-                                    email.value = it
-                                    if (Utils.isValidEmail(it)) {
-                                        isEmailValueValid.value = false
-                                    } else {
-                                        isEmailValueValid.value = true
-                                    }
-                                }, textStyle = TextStyle(
-                                    color = PrimaryColor,
-                                    fontSize = 18.sp,
-                                    fontWeight = FontWeight.W600,
-                                    textAlign = TextAlign.Left
-                                ), colors = TextFieldDefaults.outlinedTextFieldColors(
-                                    focusedBorderColor = PrimaryColor,
-                                    unfocusedBorderColor = PrimaryColor,
-                                    cursorColor = PrimaryColor
-                                ), singleLine = true, placeholder = {
-                                    if (email.value.isBlank()) {
-                                        Text(
-                                            modifier = Modifier.fillMaxWidth(),
-                                            text = "Enter email",
-                                            color = Color.DarkGray,
-                                            fontSize = 18.sp,
-                                            textAlign = TextAlign.Left
-                                        )
-                                    }
-                                })
-
-                                if (isEmailValueValid.value) {
-                                    Text(
-                                        text = emailError.value,
-                                        textAlign = TextAlign.Center,
-                                        fontSize = 12.sp,
-                                        fontWeight = FontWeight.Bold,
-                                        color = Color.Red,
-
-                                        )
-                                }
-
-                                Text(
-                                    text = "Phone number",
-                                    textAlign = TextAlign.Center,
-                                    fontSize = 21.sp,
-                                    fontWeight = FontWeight.Bold,
-                                    color = PrimaryColor,
-                                    modifier = Modifier.padding(top = 16.dp)
-                                )
-
-                                ZvoidCountryCodePicker(
-                                    text = phoneNumber.value,
-                                    onValueChange = {
-                                        phoneNumber.value = it
-                                    },
-                                    onPhoneCodeChange = {
-                                        countryCode.value = it
-                                    },
-                                    unfocusedBorderColor = Color.Transparent,
-                                    bottomStyle = false, //  if true the text-field is below the country code selector at the top.
-                                    shape = RoundedCornerShape(0.dp),
-                                    showCountryCode = true,
-                                    color = Color.Transparent,
-                                    modifier = Modifier.fillMaxWidth()
-                                )
-                            }
-
-                        }
-
-
-                        *//*      Text(
-                              text = "First Name",
-                              textAlign = TextAlign.Center,
-                              fontSize = 21.sp,
-                              fontWeight = FontWeight.Bold,
-                              color = PrimaryColor,
-
-                              )
-
-                          TextField(
-                              modifier = Modifier
-                                  .fillMaxWidth()
-                                  .bringIntoViewRequester(bringIntoViewRequester)
-                                  .onFocusEvent {
-                                      if (it.isFocused) {
-                                          coroutineScope.launch {
-                                              bringIntoViewRequester.bringIntoView()
-                                          }
-                                      }
-                                  },
-                              value = firstName.value,
-                              onValueChange = {
-                                  firstName.value = it
-                              },
-                              textStyle = TextStyle(
-                                  color = PrimaryColor,
-                                  fontSize = 18.sp,
-                                  fontWeight = FontWeight.W600,
-                                  textAlign = TextAlign.Left
-                              ),
-                              colors = TextFieldDefaults.outlinedTextFieldColors(
-                                  focusedBorderColor = PrimaryColor,
-                                  unfocusedBorderColor = PrimaryColor,
-                                  cursorColor = PrimaryColor
-                              ),
-                              singleLine = true,
-                              placeholder = {
-                                  if (firstName.value.isBlank()) {
-                                      Text(
-                                          modifier = Modifier.fillMaxWidth(),
-                                          text = "Enter first name",
-                                          color = Color.DarkGray,
-                                          fontSize = 18.sp,
-                                          textAlign = TextAlign.Left
-                                      )
-                                  }
-                              })
-                          if (isFirstNameValid.value) {
-                              Text(
-                                  text = firstNameError.value,
-                                  textAlign = TextAlign.Center,
-                                  fontSize = 12.sp,
-                                  fontWeight = FontWeight.Bold,
-                                  color = Color.Red,
-
-                                  )
-                          }
-
-
-                          Text(
-                              text = "Last Name",
-                              textAlign = TextAlign.Center,
-                              fontSize = 21.sp,
-                              fontWeight = FontWeight.Bold,
-                              color = PrimaryColor,
-                              modifier = Modifier.padding(top = 16.dp)
-                          )
-
-                          TextField(
-                              modifier = Modifier
-                                  .fillMaxWidth()
-                                  .bringIntoViewRequester(bringIntoViewRequester)
-                                  .onFocusEvent {
-                                      if (it.isFocused) {
-                                          coroutineScope.launch {
-                                              bringIntoViewRequester.bringIntoView()
-                                          }
-                                      }
-                                  },
-                              value = lastName.value,
-                              onValueChange = {
-                                  lastName.value = it
-                              },
-                              textStyle = TextStyle(
-                                  color = PrimaryColor,
-                                  fontSize = 18.sp,
-                                  fontWeight = FontWeight.W600,
-                                  textAlign = TextAlign.Left
-                              ),
-                              colors = TextFieldDefaults.outlinedTextFieldColors(
-                                  focusedBorderColor = PrimaryColor,
-                                  unfocusedBorderColor = PrimaryColor,
-                                  cursorColor = PrimaryColor
-                              ),
-                              singleLine = true,
-                              placeholder = {
-                                  if (lastName.value.isBlank()) {
-                                      Text(
-                                          modifier = Modifier.fillMaxWidth(),
-                                          text = "Enter last name",
-                                          color = Color.DarkGray,
-                                          fontSize = 18.sp,
-                                          textAlign = TextAlign.Left
-                                      )
-                                  }
-                              })
-                          if (isLastNameValid.value) {
-                              Text(
-                                  text = lastNameError.value,
-                                  textAlign = TextAlign.Center,
-                                  fontSize = 12.sp,
-                                  fontWeight = FontWeight.Bold,
-                                  color = Color.Red,
-
-                                  )
-                          }
-
-                          Text(
-                              text = "Email",
-                              textAlign = TextAlign.Center,
-                              fontSize = 21.sp,
-                              fontWeight = FontWeight.Bold,
-                              color = PrimaryColor,
-                              modifier = Modifier.padding(top = 16.dp)
-                          )
-
-                          TextField(
-                              modifier = Modifier
-                                  .fillMaxWidth()
-                                  .bringIntoViewRequester(bringIntoViewRequester)
-                                  .onFocusEvent {
-                                      if (it.isFocused) {
-                                          coroutineScope.launch {
-                                              bringIntoViewRequester.bringIntoView()
-                                          }
-                                      }
-                                  },
-                              value = email.value,
-                              onValueChange = {
-                                  email.value = it
-                                  if (Utils.isValidEmail(it)) {
-                                      isEmailValueValid.value = false
-                                  } else {
-                                      isEmailValueValid.value = true
-                                  }
-                              },
-                              textStyle = TextStyle(
-                                  color = PrimaryColor,
-                                  fontSize = 18.sp,
-                                  fontWeight = FontWeight.W600,
-                                  textAlign = TextAlign.Left
-                              ),
-                              colors = TextFieldDefaults.outlinedTextFieldColors(
-                                  focusedBorderColor = PrimaryColor,
-                                  unfocusedBorderColor = PrimaryColor,
-                                  cursorColor = PrimaryColor
-                              ),
-                              singleLine = true,
-                              placeholder = {
-                                  if (email.value.isBlank()) {
-                                      Text(
-                                          modifier = Modifier.fillMaxWidth(),
-                                          text = "Enter email",
-                                          color = Color.DarkGray,
-                                          fontSize = 18.sp,
-                                          textAlign = TextAlign.Left
-                                      )
-                                  }
-                              })
-
-                          if (isEmailValueValid.value) {
-                              Text(
-                                  text = emailError.value,
-                                  textAlign = TextAlign.Center,
-                                  fontSize = 12.sp,
-                                  fontWeight = FontWeight.Bold,
-                                  color = Color.Red,
-
-                                  )
-                          }
-
-                          Text(
-                              text = "Phone number",
-                              textAlign = TextAlign.Center,
-                              fontSize = 21.sp,
-                              fontWeight = FontWeight.Bold,
-                              color = PrimaryColor,
-                              modifier = Modifier.padding(top = 16.dp)
-                          )
-
-                          ZvoidCountryCodePicker(
-                              text = phoneNumber.value,
-                              onValueChange = {
-                                  phoneNumber.value = it
-                              },
-                              onPhoneCodeChange = {
-                                  countryCode.value = it
-                              },
-                              unfocusedBorderColor = Color.Transparent,
-                              bottomStyle = false, //  if true the text-field is below the country code selector at the top.
-                              shape = RoundedCornerShape(0.dp),
-                              showCountryCode = true,
-                              color = Color.Transparent,
-                              modifier = Modifier
-                                  .fillMaxWidth()
-                          )
-      *//*
-                    Divider()
-                    Column(Modifier.height(20.dp)) {
-
-                    }*/
 
 
                             if (!isApiResponseSuccess.value) {
@@ -939,27 +633,9 @@ fun SignUpScreen(
 
                     }
                     Spacer(modifier = Modifier.height(12.dp))
-                    Row(
-                        modifier = Modifier
-                            .padding(bottom = 52.dp),
+                    /*Row(
+                        modifier = Modifier,
                     ) {
-                        /*  Row(
-                              modifier = Modifier
-                                  .fillMaxWidth()
-                                  .weight(0.5f),
-                              horizontalArrangement = Arrangement.Center
-                          ) {
-                              Image(
-                                  painter = painterResource(id = R.drawable.ministry),
-                                  contentScale = ContentScale.Fit,
-                                  modifier = Modifier
-                                      .height(68.dp)
-                                      .scale(1.6f),
-
-                                  contentDescription = "Logo"
-                              )
-
-                          }*/
 
                         Row(
                             modifier = Modifier
@@ -968,14 +644,14 @@ fun SignUpScreen(
                         ) {
                             Image(
                                 painter = painterResource(id = R.drawable.ic_digital_india),
-                                contentScale = ContentScale.Fit,
+                                contentScale = ContentScale.FillBounds,
                                 modifier = Modifier
-                                    .height(68.dp)
-                                    .scale(1.4f),
+                                    .height(28.sdp)
+                                    .width(82.sdp),
                                 contentDescription = "Logo"
                             )
                         }
-                    }
+                    }*/
 
                 }
             }

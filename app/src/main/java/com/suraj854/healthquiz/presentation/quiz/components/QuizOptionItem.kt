@@ -24,6 +24,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.suraj854.healthquiz.R
 import com.suraj854.healthquiz.presentation.theme.PrimaryColor
+import ir.kaaveh.sdpcompose.sdp
 
 @Composable
 fun QuizOptionItem(isEnable: Boolean, name: String, onChecked: () -> Unit = {}) {
@@ -47,7 +48,7 @@ fun QuizOptionItem(isEnable: Boolean, name: String, onChecked: () -> Unit = {}) 
             ),
         modifier = Modifier
 
-            .fillMaxWidth().padding(vertical = 8.dp)
+            .fillMaxWidth().padding(vertical = 8.dp, horizontal = 8.sdp)
 
 
     ) {

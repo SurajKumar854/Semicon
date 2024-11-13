@@ -22,19 +22,7 @@ fun BrandHeader(modifier: Modifier = Modifier) {
             .fillMaxWidth()
 
     ) {
-        /* Row(horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()) {
-             Image(
-                 painter = painterResource(id = R.drawable.ic_logo),
-                 contentScale = ContentScale.Fit,
-                 modifier = Modifier
-                     .padding(top = 48.dp)
-                     .height(68.dp)
-                     .width(120.dp)
 
-                     .scale(2.4f),
-                 contentDescription = "Logo"
-             )
-         }*/
         Row {
             Row(
                 modifier = Modifier
@@ -43,7 +31,7 @@ fun BrandHeader(modifier: Modifier = Modifier) {
                 horizontalArrangement = Arrangement.Center
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.ministry),
+                    painter = painterResource(id = R.drawable.mofw),
                     contentScale = ContentScale.Fit,
                     modifier = Modifier
                         .height(68.dp)
@@ -60,11 +48,10 @@ fun BrandHeader(modifier: Modifier = Modifier) {
                     .weight(0.5f).padding(horizontal = 16.dp), horizontalArrangement = Arrangement.Center
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.ic_logo),
+                    painter = painterResource(id = R.drawable.mohfw),
                     contentScale = ContentScale.Fit,
                     modifier = Modifier
-                        .height(68.dp)
-                        .scale(1.3f),
+                        .height(68.dp),
                     contentDescription = "Logo"
                 )
             }

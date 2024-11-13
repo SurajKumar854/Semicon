@@ -86,7 +86,7 @@ class CertificateView(
         val scaleY = 1057f / 595f
         // Set the position for the text
         val x = 314f
-        val y = 290f
+        val y = 308f
         // New positions based on scaling
         val newX = x * scaleX
         val newY = y * scaleY
@@ -99,7 +99,7 @@ class CertificateView(
             user_name_paint
         )
         // Draw the date
-        canvas.drawText(getCurrentDateFormatted(), 628f * scaleX, 485f * scaleY, date_paint)
+        canvas.drawText(getCurrentDateFormatted(), 360f * scaleX, 475f * scaleY, date_paint)
 
         // Return the bitmap
 
@@ -119,7 +119,7 @@ class CertificateView(
         val scaleY = 1057f / 595f
         // Set the position for the text
         val x = 314f
-        val y = 290f
+        val y = 308f
         // New positions based on scaling
         val newX = x * scaleX
         val newY = y * scaleY
@@ -132,7 +132,7 @@ class CertificateView(
             user_name_paint
         )
         // Draw the date
-        canvas.drawText(getCurrentDateFormatted(), 635f * scaleX, 485f * scaleY, date_paint)
+        canvas.drawText(getCurrentDateFormatted(), 360f * scaleX, 470f * scaleY, date_paint)
 
     }
 

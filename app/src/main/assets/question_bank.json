@@ -5,132 +5,262 @@
       "questions_list": [
         {
           "question_id": 1,
-          "question": "When was the India Semiconductor Mission established ?",
+          "question": "Which of the following is a common risk factor for most NCDs?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "2018"
+              "option_value": "Frequent urination"
             },
             {
               "option_id": 2,
-              "option_value": "2019"
+              "option_value": "Severe headache"
             },
             {
               "option_id": 3,
-              "option_value": "2020"
+              "option_value": "Chest pain"
             },
             {
               "option_id": 4,
-              "option_value": "2021"
+              "option_value": "Joint pain"
             }
           ],
           "correct_option": {
-            "option_id": 4,
-            "option_value": "2021"
+            "option_id": 1,
+            "option_value": "Frequent urination"
           }
         },
         {
           "question_id": 2,
-          "question": "What is the correct sequence of the transistor technology evolution- i. FinFET, ii. Planar MOSFET, iii. Gate-all-around (GAA) Transistors",
+          "question": "What is the normal blood pressure?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "i-ii-iii"
+              "option_value": "90/60 mmHg"
             },
             {
               "option_id": 2,
-              "option_value": "ii-i-iii"
+              "option_value": "120/80 mmHg"
             },
             {
               "option_id": 3,
-              "option_value": "i-iii-ii"
+              "option_value": "140/90 mmHg"
             },
             {
               "option_id": 4,
-              "option_value": "iii-ii-i"
+              "option_value": "180/120 mmHg"
             }
           ],
           "correct_option": {
             "option_id": 2,
-            "option_value": "ii-i-iii"
+            "option_value": "120/80 mmHg"
           }
         },
         {
           "question_id": 3,
-          "question": "What is the budget outlay allocated by the Government of India for the Semicon India Programme under ISM for boosting semiconductor manufacturing in India ? ",
+          "question": "When was Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY) launched?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "INR 56,000 crore"
+              "option_value": "15 August 2017"
             },
             {
               "option_id": 2,
-              "option_value": "INR 66,000 crore"
+              "option_value": "23 September 2018"
             },
             {
               "option_id": 3,
-              "option_value": "INR 76,000 crore"
+              "option_value": "1 January 2019"
             },
             {
               "option_id": 4,
-              "option_value": "INR 86,000 crore"
-            }
-          ],
-          "correct_option": {
-            "option_id": 3,
-            "option_value": "INR 76,000 crore"
-          }
-        },
-        {
-          "question_id": 4,
-          "question": "Which country is the leader in Extreme Ultraviolet (EUV) lithography equipment used in Semiconductor manufacturing? ",
-          "options": [
-            {
-              "option_id": 1,
-              "option_value": "Japan"
-            },
-            {
-              "option_id": 2,
-              "option_value": "Netherland"
-            },
-            {
-              "option_id": 3,
-              "option_value": "South Korea"
-            },
-            {
-              "option_id": 4,
-              "option_value": "United States of America"
+              "option_value": "26 January 2020"
             }
           ],
           "correct_option": {
             "option_id": 2,
-            "option_value": "Netherland"
+            "option_value": "23 September 2018"
           }
         },
         {
-          "question_id": 5,
-          "question": "What is the projected size of the Global Semiconductor market by 2030? ",
+          "question_id": 4,
+          "question": "AB-PMJAY provides health insurance of Rs. __ per family per annum",
           "options": [
             {
               "option_id": 1,
-              "option_value": " ~$1600 Bn"
+              "option_value": "2 lakh"
             },
             {
               "option_id": 2,
-              "option_value": " ~$1300 Bn"
+              "option_value": "3 lakh"
             },
             {
               "option_id": 3,
-              "option_value": "~$1000 Bn"
+              "option_value": "5 lakh"
             },
             {
               "option_id": 4,
-              "option_value": "~$800 Bn"
+              "option_value": "10 lakh"
             }
           ],
           "correct_option": {
             "option_id": 3,
-            "option_value": "~$1000 Bn"
+            "option_value": "5 lakh"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "What is the full form of HIV?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Human Immuno Virus"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Human Immunodeficiency Virus"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Human Immune Virus"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Human Injectable Virus"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Human Immunodeficiency Virus"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "When was HIV first recognized in India?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "1985"
+            },
+            {
+              "option_id": 2,
+              "option_value": "1987"
+            },
+            {
+              "option_id": 3,
+              "option_value": "1986"
+            },
+            {
+              "option_id": 4,
+              "option_value": "1981"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "1986"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "How many diseases are children vaccinated against under the UIP?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "10 diseases"
+            },
+            {
+              "option_id": 2,
+              "option_value": "11 diseases"
+            },
+            {
+              "option_id": 3,
+              "option_value": "12 diseases"
+            },
+            {
+              "option_id": 4,
+              "option_value": "13 diseases"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "12 diseases"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "Under the UIP pregnant women are vaccinated for many diseases 2 diseases and what are they?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Polio and Measles"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Tetanus and Diphtheria"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Rubella and Hepatitis B"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Meningitis and Pneumonia"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Tetanus and Diphtheria"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "TB is a",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Waterborne disease"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Airborne disease"
+            },
+            {
+              "option_id": 3,
+              "option_value": "All of the above"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Both A & B"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Airborne disease"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "Causal organism responsible for TB is?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Bacteria"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Virus"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Protozoa"
+            },
+            {
+              "option_id": 4,
+              "option_value": "None of the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "Bacteria"
           }
         }
       ]
@@ -140,132 +270,262 @@
       "questions_list": [
         {
           "question_id": 1,
-          "question": "Which company has the largest market share in semiconductor foundry business?",
+          "question": "What is the primary risk factor for oral cancer?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "GlobalFoundries"
+              "option_value": "Tobacco use"
             },
             {
               "option_id": 2,
-              "option_value": "TSMC"
+              "option_value": "Alcohol consumption"
             },
             {
               "option_id": 3,
-              "option_value": "Samsung Foundry"
+              "option_value": "Unhealthy diet"
             },
             {
               "option_id": 4,
-              "option_value": "Intel Foundry"
+              "option_value": "All of the above"
             }
           ],
           "correct_option": {
-            "option_id": 2,
-            "option_value": "TSMC"
+            "option_id": 4,
+            "option_value": "All of the above"
           }
         },
         {
           "question_id": 2,
-          "question": "Which region has the majority of advanced sub-10nm chip manufacturing facilities?",
+          "question": "What is the recommended age for women to start mammography screening?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Japan"
+              "option_value": "30 years"
             },
             {
               "option_id": 2,
-              "option_value": "South Korea"
+              "option_value": "40 years"
             },
             {
               "option_id": 3,
-              "option_value": "United States of America"
+              "option_value": "50 years"
             },
             {
               "option_id": 4,
-              "option_value": "Taiwan"
+              "option_value": "60 years"
             }
           ],
           "correct_option": {
-            "option_id": 4,
-            "option_value": "Taiwan"
+            "option_id": 2,
+            "option_value": "40 years"
           }
         },
         {
           "question_id": 3,
-          "question": "In which year the point-contact transistor demonstrated  by William Shockley, Bardeen and Brattain at the Bell Labs?",
+          "question": "Recently, which group has been included in AB-PMJAY?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "1947"
+              "option_value": "All children under 12"
             },
             {
               "option_id": 2,
-              "option_value": "1978"
+              "option_value": "All senior citizens above 70"
             },
             {
               "option_id": 3,
-              "option_value": "1985"
+              "option_value": "All government employees"
             },
             {
               "option_id": 4,
-              "option_value": "1996"
+              "option_value": "All college students"
             }
           ],
           "correct_option": {
-            "option_id": 1,
-            "option_value": "1947"
+            "option_id": 2,
+            "option_value": "All senior citizens above 70"
           }
         },
         {
           "question_id": 4,
-          "question": "What is the projected size of the Indian semiconductor market by 2030?",
+          "question": "True or False: AB-PMJAY is the largest public-funded health assurance scheme in the world.",
           "options": [
             {
               "option_id": 1,
-              "option_value": "~$25 Bn"
+              "option_value": "True"
             },
             {
               "option_id": 2,
-              "option_value": "~$60 Bn"
+              "option_value": "False"
             },
             {
               "option_id": 3,
-              "option_value": "~$80 Bn"
+              "option_value": "null"
             },
             {
               "option_id": 4,
-              "option_value": "~$110 Bn"
+              "option_value": "null"
             }
           ],
           "correct_option": {
-            "option_id": 4,
-            "option_value": "~$110 Bn"
+            "option_id": 1,
+            "option_value": "True"
           }
         },
         {
           "question_id": 5,
-          "question": "How much fiscal support is being provided by ISM for establishing display and semiconductor fabs under Programme for Development of Semiconductors and Display Ecosystem in India?",
+          "question": "What are the modes of HIV transmission?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "10% of eligible project cost"
+              "option_value": "Unprotected sex"
             },
             {
               "option_id": 2,
-              "option_value": "25% of eligible project cost"
+              "option_value": "HIV Infected mother to child"
             },
             {
               "option_id": 3,
-              "option_value": "30% of eligible project cost"
+              "option_value": "HIV infected needle & syringes and blood & blood products"
             },
             {
               "option_id": 4,
-              "option_value": "50% of eligible project cost"
+              "option_value": "All the above"
             }
           ],
           "correct_option": {
             "option_id": 4,
-            "option_value": "50% of eligible project cost"
+            "option_value": "All the above"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "Where can we get tested for HIV?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Integrated Counselling & Testing Centre (ICTC)"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Suraksha Clinic"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Medical Laboratory"
+            },
+            {
+              "option_id": 4,
+              "option_value": "ART Centre"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "ART Centre"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "How many vaccine doses does each child receive under the UIP from birth until 16 years of age?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "15 doses"
+            },
+            {
+              "option_id": 2,
+              "option_value": "20 doses"
+            },
+            {
+              "option_id": 3,
+              "option_value": "27 doses"
+            },
+            {
+              "option_id": 4,
+              "option_value": "30 doses"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "27 doses"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "What is U-WIN Digital Platform for?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Digitalization of vaccination services under UIP"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Providing incentives to healthcare workers for vaccination"
+            },
+            {
+              "option_id": 3,
+              "option_value": "School admissions of children"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Skill development for youth"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "Digitalization of vaccination services under UIP"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "Name of the bacteria which causes tuberculosis is __________?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Mycobacterium Tuberculosis"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Mycobacterium Leprae"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Plasmodium parasite"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Both A & B"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Airborne disease"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "Which other body parts can be affected in TB?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Spine"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Brain"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Lymph nodes"
+            },
+            {
+              "option_id": 4,
+              "option_value": "All of the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "All of the above"
           }
         }
       ]
@@ -275,71 +535,45 @@
       "questions_list": [
         {
           "question_id": 1,
-          "question": "India Semiconductor Mission (ISM) has signed MoU/ MoC on semiconductors with which regions/ countries?  ",
+          "question": "What is the recommended screening method for oral cancer?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "US"
+              "option_value": "Self-examination"
             },
             {
               "option_id": 2,
-              "option_value": "EU"
+              "option_value": "Doctor's examination"
             },
             {
               "option_id": 3,
-              "option_value": "Japan"
+              "option_value": "Biopsy"
             },
             {
               "option_id": 4,
-              "option_value": "All of the above"
+              "option_value": "X-ray"
             }
           ],
           "correct_option": {
-            "option_id": 4,
-            "option_value": "All of the above"
+            "option_id": 2,
+            "option_value": "Doctor's examination"
           }
         },
         {
           "question_id": 2,
-          "question": "How many projects have been approved under Programme for Semiconductors and Display Ecosystem in India as of March 2024? ",
+          "question": "What is the primary symptom of breast cancer?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "One"
+              "option_value": "Lump in the breast"
             },
             {
               "option_id": 2,
-              "option_value": "Two"
+              "option_value": "Pain in the breast"
             },
             {
               "option_id": 3,
-              "option_value": "Three"
-            },
-            {
-              "option_id": 4,
-              "option_value": "Four"
-            }
-          ],
-          "correct_option": {
-            "option_id": 3,
-            "option_value": "Three"
-          }
-        },
-        {
-          "question_id": 3,
-          "question": "Which among the following is an IDM?",
-          "options": [
-            {
-              "option_id": 1,
-              "option_value": "Intel "
-            },
-            {
-              "option_id": 2,
-              "option_value": "Samsung"
-            },
-            {
-              "option_id": 3,
-              "option_value": "Micron"
+              "option_value": "Change in nipple position"
             },
             {
               "option_id": 4,
@@ -352,55 +586,211 @@
           }
         },
         {
-          "question_id": 4,
-          "question": "What are the majority charge carriers in an N-type semiconductor?",
+          "question_id": 3,
+          "question": "When was Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (AB-PMJAY) launched?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Holes "
+              "option_value": "15 August 2017 "
             },
             {
               "option_id": 2,
-              "option_value": "Electrons"
+              "option_value": "23 September 2018"
             },
             {
               "option_id": 3,
-              "option_value": "Protons"
+              "option_value": "26 January 2020"
             },
             {
               "option_id": 4,
-              "option_value": "Neutrons"
+              "option_value": "1 January 2019"
             }
           ],
           "correct_option": {
             "option_id": 2,
-            "option_value": "Electrons"
+            "option_value": "23 September 2018"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "True or False: AB-PMJAY is the largest public-funded health assurance scheme ",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "True"
+            },
+            {
+              "option_id": 2,
+              "option_value": "False"
+            },
+            {
+              "option_id": 3,
+              "option_value": "null"
+            },
+            {
+              "option_id": 4,
+              "option_value": "null"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "True"
           }
         },
         {
           "question_id": 5,
-          "question": "The energy difference between the valence band and the conduction band in a semiconductor is termed as?",
+          "question": "What is the National Toll Free AIDS Helpline number in India?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Voltage Differential "
+              "option_value": "1097"
             },
             {
               "option_id": 2,
-              "option_value": "Energy Band Gap"
+              "option_value": "1098"
             },
             {
               "option_id": 3,
-              "option_value": "Thermal Barrier"
+              "option_value": "1908"
             },
             {
               "option_id": 4,
-              "option_value": "Fermi Energy"
+              "option_value": "1416"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "1097"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "What is the full form of HIV?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Human Immuno Virus"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Human Immunodeficiency Virus"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Human Immune Virus"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Human Injectable Virus"
             }
           ],
           "correct_option": {
             "option_id": 2,
-            "option_value": "Energy Band Gap"
+            "option_value": "Human Immunodeficiency Virus"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "How many diseases are children vaccinated against under the UIP?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "10 diseases"
+            },
+            {
+              "option_id": 2,
+              "option_value": "11 diseases"
+            },
+            {
+              "option_id": 3,
+              "option_value": "12 diseases"
+            },
+            {
+              "option_id": 4,
+              "option_value": "13 diseases"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "12 diseases"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "What is U-WIN Digital Platform for?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Digitalization of vaccination services under UIP"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Providing incentives to healthcare workers for vaccination"
+            },
+            {
+              "option_id": 3,
+              "option_value": "School admissions of children"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Skill development for youth"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "Digitalization of vaccination services under UIP"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "Which part of the body can’t be affected by TB?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Spine"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Hair and nails"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Bones"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Lymph nodes"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Hair and nails"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "Someone with active TB of the lungs can spread TB germs while:",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Coughing, Sneezing,Spit"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Sharing needles"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Sharing their forks and knives"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Using a public washroom"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "Coughing, Sneezing,Spit"
           }
         }
       ]
@@ -410,123 +800,201 @@
       "questions_list": [
         {
           "question_id": 1,
-          "question": "A Semiconductor company that focuses on design and innovation but outsources manufacturing is commonly referred to as:  ",
+          "question": "What is the recommended screening test for cervical cancer?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Fabless company"
+              "option_value": "Pap smear"
             },
             {
               "option_id": 2,
-              "option_value": "Foundry company"
+              "option_value": "HPV vaccine"
             },
             {
               "option_id": 3,
-              "option_value": "OSAT"
+              "option_value": "Ultrasound"
             },
             {
               "option_id": 4,
-              "option_value": "IDM"
+              "option_value": "Ultrasound"
             }
           ],
           "correct_option": {
             "option_id": 1,
-            "option_value": "Fabless company"
+            "option_value": "Pap smear"
           }
         },
         {
           "question_id": 2,
-          "question": "The resultant semiconductor type, after adding pentavalent impurity in group-IV semiconductor will be? ",
+          "question": "What is the primary symptom of a stroke?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Z-Type"
+              "option_value": "Sudden weakness or numbness in face, arm, or leg"
             },
             {
               "option_id": 2,
-              "option_value": "P-Type"
+              "option_value": "Rashes on body"
             },
             {
               "option_id": 3,
-              "option_value": "N-Type"
+              "option_value": "Chest pain"
             },
             {
               "option_id": 4,
-              "option_value": "Intrinsic"
+              "option_value": "Difficulty breathing"
             }
           ],
           "correct_option": {
-            "option_id": 3,
-            "option_value": "N-Type"
+            "option_id": 1,
+            "option_value": "Sudden weakness or numbness in face, arm, or leg"
           }
         },
         {
           "question_id": 3,
-          "question": "Which region currently holds the most of the global semiconductor manufacturing capacity?",
+          "question": "Recently, which group has been included in AB-PMJAY?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "North America"
+              "option_value": "All children under 12"
             },
             {
               "option_id": 2,
-              "option_value": "Europe"
+              "option_value": "All senior citizens above 70"
             },
             {
               "option_id": 3,
-              "option_value": "Asia"
+              "option_value": "All government employees"
             },
             {
               "option_id": 4,
-              "option_value": "South America"
+              "option_value": "All college students"
             }
           ],
           "correct_option": {
-            "option_id": 3,
-            "option_value": "Asia"
+            "option_id": 2,
+            "option_value": "All senior citizens above 70"
           }
         },
         {
           "question_id": 4,
-          "question": "The classic Moore's Law states that the number of components on a single IC doubles roughly every______.",
+          "question": "AB-PMJAY provides health insurance of Rs. __ per family per annum.",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Eight Years"
+              "option_value": "2 lakh"
             },
             {
               "option_id": 2,
-              "option_value": "Sixteen Years"
+              "option_value": "3 lakh"
             },
             {
               "option_id": 3,
-              "option_value": "Two Years"
+              "option_value": "5 lakh"
             },
             {
               "option_id": 4,
-              "option_value": "Four Years"
+              "option_value": "10 lakh"
             }
           ],
           "correct_option": {
             "option_id": 3,
-            "option_value": "Two Years"
+            "option_value": "5 lakh"
           }
         },
         {
           "question_id": 5,
-          "question": "Semiconductor Chips are used in which of the following?",
+          "question": "Where can we get tested for HIV?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Smart Watch"
+              "option_value": "Unprotected sex"
             },
             {
               "option_id": 2,
-              "option_value": "Automobile industry"
+              "option_value": "HIV Infected mother to child"
             },
             {
               "option_id": 3,
-              "option_value": "Smartphones"
+              "option_value": "HIV infected needle & syringes and blood & blood products"
+            },
+            {
+              "option_id": 4,
+              "option_value": "All the above"
+            }
+          ],
+          "correct_option": {
+            "option_id": 4,
+            "option_value": "All the above"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "What is the full form of HIV?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Human Immuno Virus"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Human Immunodeficiency Virus"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Human Immune Virus"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Human Injectable Virus"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Human Immunodeficiency Virus"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "Which service does U-WIN provide to remind citizens about upcoming vaccination doses?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "On Whatsapp messages "
+            },
+            {
+              "option_id": 2,
+              "option_value": "Automated SMS reminders through U-WIN "
+            },
+            {
+              "option_id": 3,
+              "option_value": "Telephone calls"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Postage mail"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Automated SMS reminders"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "How does U-WIN ensure that no child is left out of receiving life-saving vaccines?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "By providing anytime anywhere access to vaccination services "
+            },
+            {
+              "option_id": 2,
+              "option_value": "By enabling name based recording of vaccination data"
+            },
+            {
+              "option_id": 3,
+              "option_value": "By sending timely reminders for due vaccine dose(s)"
             },
             {
               "option_id": 4,
@@ -536,6 +1004,58 @@
           "correct_option": {
             "option_id": 4,
             "option_value": "All of the above"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "What is the ideal location for sputum collection?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Inside the doctor's clinic"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Inside the laboratory"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Outdoors or in a well-ventilated area"
+            },
+            {
+              "option_id": 4,
+              "option_value": "The patient's bathroom with the door closed"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "Outdoors or in a well-ventilated area"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "BCG vaccine is administered for immunity against",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Malaria"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Tuberculosis"
+            },
+            {
+              "option_id": 3,
+              "option_value": "Jaundice"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Hepatitis"
+            }
+          ],
+          "correct_option": {
+            "option_id": 2,
+            "option_value": "Tuberculosis"
           }
         }
       ]
@@ -545,132 +1065,262 @@
       "questions_list": [
         {
           "question_id": 1,
-          "question": "Which of the following diode is primarily used for voltage regulation in electronic devices?",
+          "question": "Which of the following is a complication of uncontrolled diabetes?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Light-emitting diodes"
+              "option_value": "Kidney damage"
             },
             {
               "option_id": 2,
-              "option_value": "Photo diode"
+              "option_value": "Eye damage"
             },
             {
               "option_id": 3,
-              "option_value": "Zener diode"
+              "option_value": "Nerve damage"
             },
             {
               "option_id": 4,
-              "option_value": "all of the above"
+              "option_value": "All of the above"
             }
           ],
           "correct_option": {
-            "option_id": 3,
-            "option_value": "Zener diode"
+            "option_id": 4,
+            "option_value": "All of the above"
           }
         },
         {
           "question_id": 2,
-          "question": "Which CMOS based technologies are intended to be supported for fiscal support by ISM under Semicon India Programme ?",
+          "question": "What is the recommended frequency for blood pressure monitoring in hypertension?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Logic "
+              "option_value": "Daily "
             },
             {
               "option_id": 2,
-              "option_value": "Memory"
+              "option_value": "Weekly"
             },
             {
               "option_id": 3,
-              "option_value": "Mixed Signal ICs"
+              "option_value": "Monthly"
             },
             {
               "option_id": 4,
-              "option_value": "All of the above"
+              "option_value": "Annually"
             }
           ],
           "correct_option": {
-            "option_id": 4,
-            "option_value": "All of the above"
+            "option_id": 2,
+            "option_value": "Weekly"
           }
         },
         {
           "question_id": 3,
-          "question": "Which of the following affects the size of the energy bandgap in semiconductor materials?",
+          "question": "True or False: AB-PMJAY is the largest public-funded health assurance scheme in the world.",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Temperature"
+              "option_value": "True"
             },
             {
               "option_id": 2,
-              "option_value": "Doping"
+              "option_value": "False"
             },
             {
               "option_id": 3,
-              "option_value": "Impurity concentration"
+              "option_value": "null"
             },
             {
               "option_id": 4,
-              "option_value": "All of the above"
+              "option_value": "null"
             }
           ],
           "correct_option": {
-            "option_id": 4,
-            "option_value": "All of the above"
+            "option_id": 1,
+            "option_value": "True"
           }
         },
         {
           "question_id": 4,
-          "question": "What is the marked region 'x' between source and drain in the above illustration of n-type MOSFET?",
+          "question": "AB-PMJAY provides health insurance of Rs. __ per family per annum.",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Gate"
+              "option_value": "2 lakh"
             },
             {
               "option_id": 2,
-              "option_value": "Channel"
+              "option_value": "3 lakh"
             },
             {
               "option_id": 3,
-              "option_value": "Well"
+              "option_value": "5 lakh"
             },
             {
               "option_id": 4,
-              "option_value": "Tube"
+              "option_value": "10 lakh"
             }
           ],
           "correct_option": {
-            "option_id": 2,
-            "option_value": "Channel"
+            "option_id": 3,
+            "option_value":  "5 lakh"
           }
         },
         {
           "question_id": 5,
-          "question": "An example of pentavalent impurity in semiconductor doping: ",
+          "question": "Where can we get tested for HIV?",
           "options": [
             {
               "option_id": 1,
-              "option_value": "Boron"
+              "option_value": "Unprotected sex"
             },
             {
               "option_id": 2,
-              "option_value": "Phosphorus"
+              "option_value": "HIV Infected mother to child"
             },
             {
               "option_id": 3,
-              "option_value": "Aluminium"
+              "option_value": "HIV infected needle & syringes and blood & blood products"
             },
             {
               "option_id": 4,
-              "option_value": "Gallium"
+              "option_value": "All the above"
             }
           ],
           "correct_option": {
-            "option_id": 2,
-            "option_value": "Phosphorus"
+            "option_id": 4,
+            "option_value": "All the above"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "What is the National Toll Free AIDS Helpline number in India?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "1097"
+            },
+            {
+              "option_id": 2,
+              "option_value": "1098"
+            },
+            {
+              "option_id": 3,
+              "option_value": "1908"
+            },
+            {
+              "option_id": 4,
+              "option_value": "14416"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "1097"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "How many diseases are children vaccinated against under the UIP?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "10 diseases"
+            },
+            {
+              "option_id": 2,
+              "option_value": "11 diseases"
+            },
+            {
+              "option_id": 3,
+              "option_value": "12 diseases"
+            },
+            {
+              "option_id": 4,
+              "option_value": "13 diseases"
+            }
+          ],
+          "correct_option": {
+            "option_id": 3,
+            "option_value": "12 diseases"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "What is U-WIN Digital Platform for?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Digitalization of vaccination services under UIP"
+            },
+            {
+              "option_id": 2,
+              "option_value": "Providing incentives to healthcare workers for vaccination"
+            },
+            {
+              "option_id": 3,
+              "option_value": "School admissions of children"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Skill development for youth"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "Digitalization of vaccination services under UIP"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "What is the name of Government scheme providing financial support to TB patients for their nutrition?",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "Ni-kshay Poshan Yojna"
+            },
+            {
+              "option_id": 2,
+              "option_value": "National Pension scheme"
+            },
+            {
+              "option_id": 3,
+              "option_value": "There is no such scheme"
+            },
+            {
+              "option_id": 4,
+              "option_value": "Financial support is stopped"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "Ni-kshay Poshan Yojna"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "Full form of NTEP –",
+          "options": [
+            {
+              "option_id": 1,
+              "option_value": "National Tuberculosis Elimination Programme"
+            },
+            {
+              "option_id": 2,
+              "option_value": "New Tuberculosis Elimination Programme"
+            },
+            {
+              "option_id": 3,
+              "option_value": "National Tuberculosis End Programme"
+            },
+            {
+              "option_id": 4,
+              "option_value": "National Tuberculosis Elimination Process"
+            }
+          ],
+          "correct_option": {
+            "option_id": 1,
+            "option_value": "National Tuberculosis Elimination Programme"
           }
         }
       ]

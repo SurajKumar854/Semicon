@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "93907868392",
-    "project_id": "placedemo-360609",
-    "storage_bucket": "placedemo-360609.firebasestorage.app"
+    "project_number": "326122686278",
+    "project_id": "healthapp-27e28",
+    "storage_bucket": "healthapp-27e28.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:93907868392:android:6673a12acf9f5fa1a2475d",
+        "mobilesdk_app_id": "1:326122686278:android:72fbbe2b14754c53d08747",
         "android_client_info": {
           "package_name": "com.suraj854.healthquiz"
         }

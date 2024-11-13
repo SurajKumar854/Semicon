@@ -26,7 +26,7 @@ fun getFlags(countryName: String): Int {
         "bd" -> R.drawable.bd
         "be" -> R.drawable.be
         "bf" -> R.drawable.bf
-        "bg" -> R.drawable.bg
+        "bg" -> R.drawable.app_bg
         "bh" -> R.drawable.bh
         "bi" -> R.drawable.bi
         "bj" -> R.drawable.bj
